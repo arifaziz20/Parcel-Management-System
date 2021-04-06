@@ -24,7 +24,6 @@
         h1
         {
             margin: 0 auto;
-            padding: 2em 0;
             color: #FFF;
             font: 40px Raleway;
             text-decoration: underline;
@@ -82,9 +81,15 @@
             width: 100%;
             /* width: auto; */
         }
+
+        .gmb{
+            width: 20%;
+        }
     </style>
 </head>
 <body>
+
+       <center><img src="logo 2.png" alt="gambaohaa" class="gmb"></center> 
     <h1 onclick="destroyer()">
        OHAA PARCEL STORAGE
     </h1>
