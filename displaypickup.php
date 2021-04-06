@@ -102,11 +102,13 @@ console.log(timeNow);
 let output = document.getElementById('status');
 toHTML();
 
+//by Ilham Hakimi
 function toHTML(){
     let display = ' ';
     status.forEach(function(item,index){
         if(item){
             let idname = 'pickup-btn'+(index+1);
+            //by Akmal
             let d = new Date(item['dateExp']);
             let n = d.getTime();
             console.log(n);
@@ -138,6 +140,7 @@ function toHTML(){
     assignbutton();
 }
 
+//by amir Syazwan 1913373
 function assignbutton(){
     for (let i=1;i<=5;i++){
         let idname='pickup-btn'+i;

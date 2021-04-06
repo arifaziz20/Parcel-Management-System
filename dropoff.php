@@ -151,6 +151,7 @@
 // // let houseno = document.getElementById("houseno");
 // // let recip = document.getElementById("recip");
 
+    //by Ammar Arif 1919933
     const inpcourier = document.getElementById("courier");
     const inpparcel = document.getElementById("parcelno");
     const inphouse = document.getElementById("houseno");
@@ -167,6 +168,7 @@
             alert("Input not completed.");
         }
         else{
+            //by Amirul Afiq 1916491
             let slotAvail = JSON.parse(localStorage.getItem("slotAvail"));
             if (!slotAvail){
                 slotAvail = [];
@@ -197,7 +199,8 @@
                 }
                 localStorage.removeItem("slotAvail");
                 localStorage.setItem("slotAvail",JSON.stringify(slotAvail));
-                             
+                
+                //by Akmal 1911967
                 var d = new Date();
                 // d.setTime(d.getTime()+172800000); 
                 d.setTime(d.getTime()+60000); 

@@ -88,7 +88,7 @@
     </style>
 </head>
 <body>
-
+        <!-- by ilham hakimi 1914359 -->
        <center><img src="logo 2.png" alt="gambaohaa" class="gmb"></center> 
     <h1 onclick="destroyer()">
        OHAA PARCEL STORAGE
