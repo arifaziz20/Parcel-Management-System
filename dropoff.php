@@ -202,9 +202,9 @@
                 
                 //by Akmal 1911967
                 var d = new Date();
-                // d.setTime(d.getTime()+172800000); 
-                d.setTime(d.getTime()+60000); 
-                // d.setDate(d.getDate()+2); //actual
+                
+                // d.setTime(d.getTime()+60000); 
+                d.setDate(d.getDate()+2); //actual
                 var n = d.getDate();
                 
                 // d.setHours(8);

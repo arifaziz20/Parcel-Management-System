@@ -101,6 +101,7 @@ console.log(timeNow);
 
 let output = document.getElementById('status');
 toHTML();
+assignbutton();
 
 //by Ilham Hakimi
 function toHTML(){
@@ -137,7 +138,7 @@ function toHTML(){
 
     });
     output.innerHTML = display;
-    assignbutton();
+    
 }
 
 //by amir Syazwan 1913373
