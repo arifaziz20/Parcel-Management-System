@@ -18,4 +18,4 @@ c. The assigned tasks for each group member.
   Amir : function pickup remove (assignbuttn display pickup)  
       
 d. Brief Description of the case study.
-  We name our parcel management system, OHAA Parcel Management System. Our system is based on the condomonium parcel management system. Our system include the option to drop off and pick up parcel. We have 30 houses and each of them have their own slots. Each slots can store a maximum of five parcels. Any parcel have a maximum of two days before it will be returned to their respective courier. Parcels is stored based on house number.
+  We name our parcel management system, OHAA Parcel Management System. Our system is based on the condomonium parcel management system. Our system include the option to drop off and pick up parcel. We have 30 houses and each of them have their own storage. Each storage have five slots for storing parcels. Any parcel have a maximum of two days before it will be returned to their respective courier. Parcels is stored based on house number.
