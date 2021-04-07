@@ -83,8 +83,8 @@
 <script>
 
 let houseno = JSON.parse("<?php echo $houseno?>");
-let status = [];
-let isExpired = [];
+let status = []; //array for store slots details
+// let isExpired = [];
 let slotAvail = JSON.parse(localStorage.getItem("slotAvail"));
 
 for (let i=1;i<=5;i++)
@@ -93,11 +93,10 @@ for (let i=1;i<=5;i++)
     let temp = JSON.parse(localStorage.getItem(keyname));
     status.push(temp);
 }
-
-//auto remove 
+//by Akmal
 var dateNow = new Date();
 let timeNow = dateNow.getTime();
-console.log(timeNow);
+// console.log(timeNow);
 
 let output = document.getElementById('status');
 toHTML();
@@ -109,11 +108,12 @@ function toHTML(){
     status.forEach(function(item,index){
         if(item){
             let idname = 'pickup-btn'+(index+1);
-            //by Akmal
+            
             let d = new Date(item['dateExp']);
             let n = d.getTime();
             console.log(n);
             if(n < timeNow){
+                //remove button
                 display += '<fieldset> Slot '+(index+1)+
                         '<br><table width=100%><tr><td>Courier: '+item['courier']+
                         '</td><td>Parcel Number: '+item['parcelno']+
@@ -121,7 +121,9 @@ function toHTML(){
                         '</td><td>Date Return: '+d.toLocaleString()+
                         '<span>&nbspRETURNED</span></td><td><button id="'+idname+
                         'exp">Remove</button></td></tr></table></fieldset>';
+
             } else{
+                //pickup button
                 display += '<fieldset> Slot '+(index+1)+
                         '<br><table width=100%><tr><td>Courier: '+item['courier']+
                         '</td><td>Parcel Number: '+item['parcelno']+
@@ -132,6 +134,7 @@ function toHTML(){
             }
 
         } else {
+            //empty slot
             display += '<fieldset> Slot '+(index+1)+
                         '<br><table width=100%><tr><td>Slot is empty! :(</td></tr></table></fieldset>'; 
         }
@@ -185,8 +188,8 @@ let inpprev =document.getElementsByClassName('previous');
 
 inpprev.onclick() = function(){
     <?php
-    session_unset();
-    session_destroy();
+    session_unset(); //remove ['username']
+    session_destroy(); //destroy session
     ?>
 };
 

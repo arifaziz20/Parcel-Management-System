@@ -99,9 +99,10 @@
     </div>
     
     <script>
-    function destroyer(){
-        localStorage.clear();
-    }
+    // for testing purpose
+    // function destroyer(){
+    //     localStorage.clear();
+    // }
     </script>
 </body>
 </html>

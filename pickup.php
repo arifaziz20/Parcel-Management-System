@@ -124,37 +124,7 @@
     </form>
     </div>       
 
-    <!-- <script>
-        const inphouse = document.getElementById("houseno");
-        const inppin = document.getElementById("pin");
-        const inpbtn = document.getElementById("button");
-        const inpform = document.getElementById("myform");
-        
-        let pindb = [1231,1232,1233,1234,1235];
-        localStorage.setItem("pindb", JSON.stringify(pindb));
-        
-        inpbtn.onclick = function() {
-            const house = inphouse.value;
-            const pin = inppin.value;
-
-            let pinDB= JSON.parse(localStorage.getItem("pindb"));
-            alert(house +", "+ pin +", "+ pinDB);
-            if (pinDB[house-1]==pin){
-                alert("Great! Pin number are matched. :)");
-                inpform.action ="/displaypickup.php";
-            }
-            else{
-                alert("Pin number are wong! :(")
-            }
-
-        };
-    //check house no and pin
-
-    //if same, proceed post method
-
-    </script> -->
-
-    
+     
 
 </body>
 

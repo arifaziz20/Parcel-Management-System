@@ -80,7 +80,9 @@
     <div class = "content">
     <!-- <form action="dataparcel.php" method="post"> -->
     <fieldset>
-<legend>Details:</legend>
+    <legend>
+        Details:
+    </legend>
         Courier:
             <input name="courier" id="courier" type="text" required/> 
             <br><br>      
@@ -131,26 +133,6 @@
 
 <script>
 
-// let button = document.getElementsByTagName("button");
-// button.onclick = function(){
-
-//     let courier = document.getElementById("courier").value;
-//     let parcelno = document.getElementById("parcelno").value;
-//     let houseno = document.getElementById("houseno").value;
-//     let recip = document.getElementById("recip").value;
-
-//     let slot1 = {courier:courier, parcelno:parcelno ,houseno: houseno, recip:recip};
-
-
-    
-//     localStorage.setItem("slot1",JSON.stringify(slot1));
-// }
-
-// // let courier = document.getElementById("courier");
-// // let parcelno = document.getElementById("parcelno");
-// // let houseno = document.getElementById("houseno");
-// // let recip = document.getElementById("recip");
-
     //by Ammar Arif 1919933
     const inpcourier = document.getElementById("courier");
     const inpparcel = document.getElementById("parcelno");
@@ -197,15 +179,16 @@
                         break;
                         
                 }
-                localStorage.removeItem("slotAvail");
+                // localStorage.removeItem("slotAvail");
                 localStorage.setItem("slotAvail",JSON.stringify(slotAvail));
                 
                 //by Akmal 1911967
                 var d = new Date();
                 
-                // d.setTime(d.getTime()+60000); 
-                d.setDate(d.getDate()+2); //actual
-                var n = d.getDate();
+                // d.setDate(d.getDate()+2); //actual
+                // d.setTime(d.getTime()+60000); //remove
+                d.setTime(d.getTime()+172800000);
+                // var n = d.getDate();
                 
                 // d.setHours(8);
 
